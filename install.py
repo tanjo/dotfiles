@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import sys
+import os
 
 class DotfilesInstaller(object):
   """Dotfiles 用インストーラー
@@ -33,6 +34,8 @@ class DotfilesInstaller(object):
     
   def install_mac(self):
     print "installing for mac... ."
+    print "[1] Project Directory"
+    os.system("./mac/make_project_directory.sh")
         
   def install_win(self):
     print "installing for windows... ."
