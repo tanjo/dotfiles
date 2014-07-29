@@ -19,9 +19,9 @@ dotfiles
 
   1. mkdir コマンドを叩く
 
-        ```
-        mkdir ~/project
-        ```
+    ```
+    mkdir ~/project
+    ```
 
 ###### [2] SSH
 ###### [3] Xcode
@@ -41,9 +41,9 @@ dotfiles
 
   1. Webページからインストール
 
-        ```
-        open https://gyazo.com/downloading?dl=now
-        ```
+    ```
+    open https://gyazo.com/downloading?dl=now
+    ```
 
 ###### [17] Dropbox
 ###### [18] HipChat
@@ -51,26 +51,26 @@ dotfiles
 
   1. Webページからインストール
 
-        ```
-        open https://www.google.co.jp/chrome/
-        ```
+    ```
+    open https://www.google.co.jp/chrome/
+    ```
 
 ###### [20] GoogleJapaneseInput
 
   1. Webページからインストール
 
-        ```
-        open http://www.google.co.jp/ime/download.html
-        ```
+    ```
+    open http://www.google.co.jp/ime/download.html
+    ```
 
 ###### [21] Android Studio
 ###### [22] LINE
 
   1. Webページからインストール
 
-        ```
-        open http://line.me/ja/download
-        ```
+    ```
+    open http://line.me/ja/download
+    ```
 
 ###### [23] TweetDeck
 ###### [24] Evernote
@@ -87,9 +87,9 @@ dotfiles
 
     [https://atom.io/download/mac](https://atom.io/download/mac)
 
-      ```
-	    open https://atom.io/download/mac
-      ```
+    ```
+	  open https://atom.io/download/mac
+    ```
 
 ###### [33] Google Noto Fonts
 
@@ -97,6 +97,6 @@ dotfiles
 
     [http://www.google.com/get/noto/](http://www.google.com/get/noto/)
 
-        ```
-        curl -o Noto.zip http://www.google.com/get/noto/pkgs/Noto.zip
-        ```
+    ```
+    curl -o Noto.zip http://www.google.com/get/noto/pkgs/Noto.zip
+    ```
