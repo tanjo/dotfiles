@@ -85,7 +85,7 @@ dotfiles
 
   1. Web ページからインストール
 
-    [https://atom.io/download/mac](https://atom.io/download/mac)
+    [https://atom.io/](https://atom.io/)
 
     ```
 	  open https://atom.io/download/mac
