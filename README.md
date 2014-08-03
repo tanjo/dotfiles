@@ -11,7 +11,87 @@ dotfiles
 
 # Windows
 
-  調整中
+###### [1] Chocolatey インストール
+
+  1. Cmdからインストール
+
+  Chocolatey Gallery https://chocolatey.org/ のコマンドを入力してインストール
+
+  ```
+  cver all -localonly
+  ```
+
+  でインストールしたパッケージの一覧を表示する
+
+###### [2] Atom
+
+  1. Chocolatey からインストール
+
+    ```
+    choco install Atom
+    ```
+
+###### [3] Chrome
+
+  1. Chocolatey からインストール
+
+    ```
+    cinst GoogleChrome
+    ```
+
+###### [4] VLC
+
+  1. Chocolatey からインストール
+
+    ```
+    cinst vlc
+    ```
+
+###### [5] msysgit
+
+  1. Chocolatey からインストール
+
+    ```
+    cinst msysgit
+    ```
+
+###### [6] git.install
+
+  1. Chocolatey からインストール
+
+###### [7] git
+
+  1. Chocolatey からインストール
+
+###### [8] Ruby
+
+  1. Chocolatey からインストール
+
+    ```
+    cinst ruby
+    ```
+
+###### [9] Python
+
+  1. Chocolatey からインストール
+
+    ```
+    cinst python
+    ```
+
+###### [10] LINE
+###### [11] TweetDeck
+###### [12] Android Studio
+###### [13] Github
+###### [14] Google日本語入力
+###### [15] Gyazo
+###### [16] VideoCacheView
+###### [17] 7zip
+###### [18] Hipchat
+###### [19] FireAlpaca
+###### [20] サクラエディタ
+###### [21] VS
+###### [22] Genymotion
 
 # Mac
 
