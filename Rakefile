@@ -117,6 +117,10 @@ namespace :windows do
   task :mingw do
     sh("choco install mingw")
   end
+
+  task :pip do
+    sh("choco install pip")
+  end
 end
 
 # Mac用セットアップスクリプト
