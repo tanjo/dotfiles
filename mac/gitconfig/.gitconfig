@@ -1,0 +1,32 @@
+[user]
+	name = [Account]
+	email = [Mail]
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    pullreq = checkout -t
+    pushu = push -u
+    update = remote update
+    u = remote update
+    s = status
+    ss = status -sb
+    sta = status
+    staus = status
+    taus = status
+    ta = status
+    d = diff --word-diff
+    b = branch
+    c = checkout
+    pod = pull origin develop
+    sb = show-branch
+    st = !git status -s && git stash list | cat
+    cfm = !git sb && git b && git st
+    submodinit = submodule update --init --recursive
+    dd = !git diff `git show-branch --merge-base develop HEAD` HEAD  
+    pure = pull --rebase
+    pured = pull --rebase origin develop
+
