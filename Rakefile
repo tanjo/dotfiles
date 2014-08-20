@@ -1,5 +1,14 @@
 # coding: utf-8
 
+# Mac用セットアップスクリプト
+namespace :mac do
+  task :zsh do
+    sh("brew install zsh")
+    # sh("cp mac/etc/shells /etc/shells")
+    # sh("chsh -s /usr/local/bin/zsh")
+  end
+end
+
 # Windows用セットアップスクリプト
 namespace :windows do
   task :atom do
@@ -121,9 +130,4 @@ namespace :windows do
   task :pip do
     sh("choco install pip")
   end
-end
-
-# Mac用セットアップスクリプト
-namespace :mac do
-
 end
