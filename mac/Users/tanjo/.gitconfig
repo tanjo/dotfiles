@@ -1,10 +1,10 @@
 [user]
-	name = [Account]
-	email = [Mail]
+		name = [Account]
+		email = [Mail]
 [color]
-	ui = auto
+		ui = auto
 [core]
-	excludesfile = ~/.gitignore
+		excludesfile = ~/.gitignore
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -26,7 +26,8 @@
     st = !git status -s && git stash list | cat
     cfm = !git sb && git b && git st
     submodinit = submodule update --init --recursive
-    dd = !git diff `git show-branch --merge-base develop HEAD` HEAD  
+    dd = !git diff `git show-branch --merge-base develop HEAD` HEAD
     pure = pull --rebase
     pured = pull --rebase origin develop
-
+		uncommit = reset HAED^
+		recommit = commit -c ORIG_HEAD

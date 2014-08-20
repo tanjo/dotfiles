@@ -1,1 +1,0 @@
-mkdir ~/dotfiles_project
