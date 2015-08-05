@@ -1,0 +1,22 @@
+#!/bin/bash -eu
+
+DOTPATH="$(cd ~ && pwd)/project/tanjo/dotfiles"; export DOTPATH
+
+# os_detect export the PLATFORM variable as you see fit
+os_detect() {
+    export PLATFORM
+    case "$(uname -s)" in
+        *'Darwin'*) PLATFORM='osx' ;;
+        *)          PLATFORM='unknown' ;;
+    esac
+}
+
+# Main
+os_detect
+
+if [ "$PLATFORM" = "osx" ]; then
+    echo "OSX"
+    bash -c "$DOTPATH/mac/setup"
+else
+    echo "Sorry, I can't manage dotfile here."
+fi

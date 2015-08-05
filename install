@@ -1,0 +1,61 @@
+#!/bin/bash -eu
+
+# Constants
+
+DOTFILES_GITHUB="git@github.com:tanjo/dotfiles.git"; export DOTFILES_GITHUB
+DOTFILES_GITHUB_HTTPS="https://github.com/tanjo/dotfiles.git"; export DOTFILES_GITHUB_HTTPS
+DOTFILES_GITHUB_ZIP="https://github.com/tanjo/dotfiles/archive/master.zip"; export DOTFILES_GITHUB_ZIP
+DOTPATH="$(cd ~ && pwd)/project/tanjo/dotfiles"; export DOTPATH
+PROJECT_TANJO_PATH="$(cd ~ && pwd)/project/tanjo"; export PROJECT_TANJO_PATH
+
+if [ -e "$DOTPATH" ]; then
+
+    echo -n "$DOTPATH フォルダが存在します. 上書きしますか？ (Y/n) > "
+    read INPUT
+
+    if [ "$INPUT" = "Y" ]; then
+        rm -rf $DOTPATH
+    else
+        echo "終了します."
+        exit 0
+    fi
+
+fi
+
+mkdir -p $DOTPATH
+
+# os_detect export the PLATFORM variable as you see fit
+os_detect() {
+    export PLATFORM
+    case "$(uname -s)" in
+        *'Darwin'*) PLATFORM='osx' ;;
+        *)          PLATFORM='unknown' ;;
+    esac
+}
+
+is_exists() {
+    which "$1" >/dev/null 2>&1
+    return $?
+}
+
+dotfiles_downloads() {
+    echo "ダウンロードを開始します."
+    if is_exists "git"; then
+        # --recursive equals to ...
+        # git submodule init
+        # git submodule update
+        git clone --recursive "$DOTFILES_GITHUB" "$DOTPATH"
+    else
+        echo "ダウンロードできませんでした"
+    fi
+}
+
+# Main
+os_detect
+
+if [ "$PLATFORM" = "osx" ]; then
+    echo "OSX"
+    dotfiles_downloads
+else
+    echo "Sorry, I can't manage dotfile here."
+fi
