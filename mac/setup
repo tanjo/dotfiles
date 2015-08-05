@@ -9,12 +9,58 @@ os_detect() {
     esac
 }
 
+install_app() {
+    open "$2"
+    loop "$1"
+}
+
+loop() {
+    while :
+    do
+        echo -n "Did you finish the installation of $1? (Y/n/N) > "
+        read INPUT
+        if [ "$INPUT" = "Y" ]; then
+            break
+        elif [ "$INPUT" = "N" ]; then
+            exit 1
+        fi
+    done
+}
+
 # Main
 os_detect
 
 if [ "$PLATFORM" = "osx" ]; then
 
-    # TODO: ここにいろいろ書く
+    # Application
+    install_app "Google Chrome" "https://www.google.co.jp/chrome/browser/thankyou.html?platform=mac"
+    install_app "Google日本語入力" "https://tools.google.com/dlpage/japaneseinput/thankyou.html?platform=mac&hl=ja"
+    install_app "Atom" "https://atom.io/"
+    install_app "Cot Editor" "http://coteditor.com/"
+    install_app "Slack" "https://itunes.apple.com/jp/app/slack/id803453959?mt=12"
+    install_app "TweetDeck by Twitter" "https://itunes.apple.com/jp/app/tweetdeck-by-twitter/id485812721?mt=12"
+    install_app "Gyazo" "https://gyazo.com/downloading?dl=now"
+
+    # RVM
+    ruby -v
+    bash -C "\curl -sSL https://get.rvm.io | bash -s stable"
+
+    # Ruby
+    rvm list known
+    rvm install 2.0.0 --autolibs=4
+    rvm use --default 2.0.0
+    ruby -v
+
+    # HomeBrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo "INFO : You need to run the command 'brew doctor'."
+    loop "HomeBrew"
+
+    # Zsh
+    brew install zsh
+    echo "INFO : '/etc/shells' の一番下に '/bin/zsh' を追記する."
+    echo "INFO : 'chsh -s /usr/local/bin/zsh' を実行する."
+    loop "Zsh"
 
 else
     echo "Sorry, I can't manage dotfile here."

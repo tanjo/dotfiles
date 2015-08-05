@@ -3,6 +3,11 @@ dotfiles
 
 [http://tanjo.github.io/dotfiles/](http://tanjo.github.io/dotfiles/)
 
+Prior Confirmation
+-----
+
+Please complete the configuration of git.
+
 Install
 -------
 
