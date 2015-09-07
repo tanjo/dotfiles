@@ -3,10 +3,10 @@
 # Constants
 
 DOTFILES_GITHUB="git@github.com:tanjo/dotfiles.git"; export DOTFILES_GITHUB
-DOTFILES_GITHUB_HTTPS="https://github.com/tanjo/dotfiles.git"; export DOTFILES_GITHUB_HTTPS
-DOTFILES_GITHUB_ZIP="https://github.com/tanjo/dotfiles/archive/master.zip"; export DOTFILES_GITHUB_ZIP
 DOTPATH="$(cd ~ && pwd)/project/tanjo/dotfiles"; export DOTPATH
 PROJECT_TANJO_PATH="$(cd ~ && pwd)/project/tanjo"; export PROJECT_TANJO_PATH
+
+# Directory Check
 
 if [ -e "$DOTPATH" ]; then
 

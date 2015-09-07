@@ -1,5 +1,9 @@
 #!/bin/bash -eu
 
+DOTPATH="$(cd ~ && pwd)/project/tanjo/dotfiles"; export DOTPATH
+ROOTPATH="$(cd ~ && pwd)"; export ROOTPATH
+PROJECT_TANJO_PATH="$(cd ~ && pwd)/project/tanjo"; export PROJECT_TANJO_PATH
+
 # os_detect export the PLATFORM variable as you see fit
 os_detect() {
     export PLATFORM
@@ -32,35 +36,39 @@ os_detect
 
 if [ "$PLATFORM" = "osx" ]; then
 
+    echo "Hi, Mac."
+
+    # Create Directories
+
     # Application
-    install_app "Google Chrome" "https://www.google.co.jp/chrome/browser/thankyou.html?platform=mac"
-    install_app "Google日本語入力" "https://tools.google.com/dlpage/japaneseinput/thankyou.html?platform=mac&hl=ja"
-    install_app "Atom" "https://atom.io/"
-    install_app "Cot Editor" "http://coteditor.com/"
-    install_app "Slack" "https://itunes.apple.com/jp/app/slack/id803453959?mt=12"
-    install_app "TweetDeck by Twitter" "https://itunes.apple.com/jp/app/tweetdeck-by-twitter/id485812721?mt=12"
-    install_app "Gyazo" "https://gyazo.com/downloading?dl=now"
+    # install_app "Google Chrome" "https://www.google.co.jp/chrome/browser/thankyou.html?platform=mac"
+    # install_app "Google日本語入力" "https://tools.google.com/dlpage/japaneseinput/thankyou.html?platform=mac&hl=ja"
+    # install_app "Atom" "https://atom.io/"
+    # install_app "Cot Editor" "http://coteditor.com/"
+    # install_app "Slack" "https://itunes.apple.com/jp/app/slack/id803453959?mt=12"
+    # install_app "TweetDeck by Twitter" "https://itunes.apple.com/jp/app/tweetdeck-by-twitter/id485812721?mt=12"
+    # install_app "Gyazo" "https://gyazo.com/downloading?dl=now"
 
     # RVM
-    ruby -v
-    bash -C "\curl -sSL https://get.rvm.io | bash -s stable"
+    # ruby -v
+    # bash -C "\curl -sSL https://get.rvm.io | bash -s stable"
 
     # Ruby
-    rvm list known
-    rvm install 2.0.0 --autolibs=4
-    rvm use --default 2.0.0
-    ruby -v
+    # rvm list known
+    # rvm install 2.0.0 --autolibs=4
+    # rvm use --default 2.0.0
+    # ruby -v
 
     # HomeBrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    echo "INFO : You need to run the command 'brew doctor'."
-    loop "HomeBrew"
+    # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # echo "INFO : You need to run the command 'brew doctor'."
+    # loop "HomeBrew"
 
     # Zsh
-    brew install zsh
-    echo "INFO : '/etc/shells' の一番下に '/bin/zsh' を追記する."
-    echo "INFO : 'chsh -s /usr/local/bin/zsh' を実行する."
-    loop "Zsh"
+    # brew install zsh
+    # echo "INFO : '/etc/shells' の一番下に '/bin/zsh' を追記する."
+    # echo "INFO : 'chsh -s /usr/local/bin/zsh' を実行する."
+    # loop "Zsh"
 
 else
     echo "Sorry, I can't manage dotfile here."
