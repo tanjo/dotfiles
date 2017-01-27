@@ -1,10 +1,10 @@
 [user]
-		name = [Account]
-		email = [Mail]
+	name = tanjo
+	email = tanjo@users.noreply.github.com
 [color]
-		ui = auto
+	ui = auto
 [core]
-		excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -29,5 +29,7 @@
     dd = !git diff `git show-branch --merge-base develop HEAD` HEAD
     pure = pull --rebase
     pured = pull --rebase origin develop
-		uncommit = reset HAED^
-		recommit = commit -c ORIG_HEAD
+    uncommit = reset HAED^
+    recommit = commit -c ORIG_HEAD
+    w = browse
+    wi = browse -- issues

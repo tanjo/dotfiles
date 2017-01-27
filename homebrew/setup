@@ -1,0 +1,30 @@
+#!/bin/bash -eu
+
+# Install package
+install_package() {
+  brew install node
+  brew install git
+  brew install openssl
+  brew info openssl
+  echo -n "openssl のバージョンを入力してください ex) 1.0.2k > "
+  read INPUT
+  echo "export PATH=/usr/local/Cellar/openssl/$INPUT/bin:\$PATH" >> ~/.bashrc
+  source ~/.bashrc
+  brew install ruby
+  brew info ruby
+  echo -n "ruby のバージョンを入力してください ex) > "
+  read INPUT
+  echo "export PATH=/usr/local/Cellar/ruby/$INPUT/bin:\$PATH" >> ~/.bashrc
+  source ~/.bashrc
+  brew install ffmpeg
+  brew install python
+  brew install zsh
+  brew install mongodb
+  brew install redis
+  brew install hub
+  brew install cmake
+  brew install appledoc
+}
+
+# Main
+install_package
