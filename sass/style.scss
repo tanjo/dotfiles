@@ -1,0 +1,27 @@
+body {
+  background: url(../resources/burger.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#header {
+  text-align: center;
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.title {
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+}
+
+a.plain {
+  color: white;
+  text-decoration: none;
+}
