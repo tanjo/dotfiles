@@ -1,0 +1,65 @@
+[~/project/tanjo/dotfiles]
+ > bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/npm/setup)"                                                         (git)-[gh-pages]
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   382  100   382    0     0   3483      0 --:--:-- --:--:-- --:--:--  3504
+/usr/local/bin/trash -> /usr/local/lib/node_modules/trash-cli/cli.js
+/usr/local/lib
+└── trash-cli@1.4.0
+
+/usr/local/bin/browserify -> /usr/local/lib/node_modules/browserify/bin/cmd.js
+/usr/local/lib
+└── browserify@14.0.0
+
+/usr/local/bin/express -> /usr/local/lib/node_modules/express-generator/bin/express
+/usr/local/lib
+└── express-generator@4.14.0
+
+npm WARN deprecated CSSselect@0.4.1: the module is now available as 'css-select'
+npm WARN deprecated CSSwhat@0.4.7: the module is now available as 'css-what'
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+/usr/local/lib
+└── generator-hubot@0.4.0
+
+/usr/local/bin/gulp -> /usr/local/lib/node_modules/gulp-cli/bin/gulp.js
+/usr/local/lib
+└── gulp-cli@1.2.2
+
+/usr/local/bin/hubot -> /usr/local/lib/node_modules/hubot/bin/hubot
+/usr/local/lib
+└── hubot@2.19.0
+
+/usr/local/bin/uglifyjs -> /usr/local/lib/node_modules/uglify-js/bin/uglifyjs
+/usr/local/lib
+└── uglify-js@2.7.5
+
+/usr/local/bin/tsserver -> /usr/local/lib/node_modules/typescript/bin/tsserver
+/usr/local/bin/tsc -> /usr/local/lib/node_modules/typescript/bin/tsc
+/usr/local/lib
+└── typescript@2.1.5
+
+npm WARN deprecated npmconf@2.1.2: this package has been reintegrated into npm and is now out of date with respect to npm
+/usr/local/bin/yo -> /usr/local/lib/node_modules/yo/lib/cli.js
+/usr/local/bin/yo-complete -> /usr/local/lib/node_modules/yo/lib/completion/index.js
+
+> yo@1.8.5 postinstall /usr/local/lib/node_modules/yo
+> yodoctor
+
+
+Yeoman Doctor
+Running sanity checks on your system
+
+✔ Global configuration file is valid
+✔ Node.js version
+✔ No .bowerrc file in home directory
+✔ No .yo-rc.json file in home directory
+✔ npm version
+✔ NODE_PATH matches the npm root
+
+Everything looks all right!
+/usr/local/lib
+└── yo@1.8.5
+
+bash -c   36.16s user 5.67s system 33% cpu 2:04.80 total

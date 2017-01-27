@@ -5,7 +5,7 @@
 ## Install
 
 ```
-./install
+bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/install)"
 ```
 
 ## Setup
@@ -13,11 +13,11 @@
 node, git, openssl, ruby, ffmpeg, python, zsh, mongodb, redis, hub, cmake, appledoc
 
 ```
-./setup
+bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/setup)"
 ```
 
 ## UnInstall
 
 ```
-./uninstall
+bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/uninstall)"
 ```
