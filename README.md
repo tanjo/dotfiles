@@ -1,3 +1,4 @@
 # dotfiles
 
-- [Homebrew](HOMEBREW.md)
+- [Homebrew](homebrew/README.md)
+- [npm](npm/README.md)

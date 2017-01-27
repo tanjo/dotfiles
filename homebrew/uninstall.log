@@ -1,52 +1,3 @@
-# Homebrew
-
-## Install
-
-- [Homebrew — macOS 用パッケージマネージャー](http://brew.sh/index_ja.html)
-
-```
-./homebrewinstall
-```
-
-## UnInstall
-
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-```
-
-### 過去の遺産
-
-```sh
-> brew list
-
-ant			gcc@4.7			lame			openssl
-appledoc		gcc@4.9			libevent		pango
-autoconf		gdbm			libffi			pcre
-automake		gettext			libgpg-error		pixman
-bison			git			libksba			pkg-config
-cairo			glib			libmpc			ppl011
-carthage		gmp			libmpc08		ppl@0.11
-clib			gmp4			libmpc@0.8		python
-cloog			gmp@4			libpng			python3
-cloog-ppl015		gobject-introspection	libsodium		readline
-cloog018		harfbuzz		libtiff			redis
-cloog@0.15		hub			libtool			ricty
-cmake			icu4c			libvo-aacenc		ruby
-czmq			ilmbase			libyaml			sqlite
-eigen			imagemagick		memcached		uncrustify
-elasticsearch		isl			mongodb			watch
-ffmpeg			isl011			mpfr			x264
-fontconfig		isl@0.11		mpfr2			xctool
-fontforge		isl@0.12		mpfr@2			xvid
-freetype		jasper			node			xz
-gcc			jenkins			oniguruma		zeromq
-gcc47			jpeg			openexr			zsh
-gcc49			jq			openssh
-```
-
-### アンインストール時のWarning
-
-```sh
 > ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 Warning: This script will remove:
 /Applications/IDLE 3.app -> /usr/local/Cellar/python3/3.4.1_1/IDLE 3.app
@@ -100,4 +51,3 @@ The following possible Homebrew files were not deleted:
 /usr/local/var/
 You may wish to remove them yourself.
 ruby -e   8.93s user 18.22s system 32% cpu 1:23.15 total
-```

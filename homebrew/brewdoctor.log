@@ -1,0 +1,337 @@
+[~/project/tanjo/dotfiles]
+ > brew doctor                                                                                                           (git)-[features/homebrew]
+correct: brew -> _brew [nyae]? n
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: Your XQuartz (2.7.7) is outdated.
+Please install XQuartz 2.7.9 (or delete the current version).
+XQuartz can be updated using Homebrew-Cask by running
+  brew cask reinstall xquartz
+
+Warning: Unbrewed dylibs were found in /usr/local/lib.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected dylibs:
+  /usr/local/lib/libopencv_calib3d.2.4.11.dylib
+  /usr/local/lib/libopencv_calib3d.3.0.0.dylib
+  /usr/local/lib/libopencv_calib3d.3.1.0.dylib
+  /usr/local/lib/libopencv_contrib.2.4.11.dylib
+  /usr/local/lib/libopencv_core.2.4.11.dylib
+  /usr/local/lib/libopencv_core.3.0.0.dylib
+  /usr/local/lib/libopencv_core.3.1.0.dylib
+  /usr/local/lib/libopencv_features2d.2.4.11.dylib
+  /usr/local/lib/libopencv_features2d.3.0.0.dylib
+  /usr/local/lib/libopencv_features2d.3.1.0.dylib
+  /usr/local/lib/libopencv_flann.2.4.11.dylib
+  /usr/local/lib/libopencv_flann.3.0.0.dylib
+  /usr/local/lib/libopencv_flann.3.1.0.dylib
+  /usr/local/lib/libopencv_gpu.2.4.11.dylib
+  /usr/local/lib/libopencv_highgui.2.4.11.dylib
+  /usr/local/lib/libopencv_highgui.3.0.0.dylib
+  /usr/local/lib/libopencv_highgui.3.1.0.dylib
+  /usr/local/lib/libopencv_imgcodecs.3.0.0.dylib
+  /usr/local/lib/libopencv_imgcodecs.3.1.0.dylib
+  /usr/local/lib/libopencv_imgproc.2.4.11.dylib
+  /usr/local/lib/libopencv_imgproc.3.0.0.dylib
+  /usr/local/lib/libopencv_imgproc.3.1.0.dylib
+  /usr/local/lib/libopencv_legacy.2.4.11.dylib
+  /usr/local/lib/libopencv_ml.2.4.11.dylib
+  /usr/local/lib/libopencv_ml.3.0.0.dylib
+  /usr/local/lib/libopencv_ml.3.1.0.dylib
+  /usr/local/lib/libopencv_nonfree.2.4.11.dylib
+  /usr/local/lib/libopencv_objdetect.2.4.11.dylib
+  /usr/local/lib/libopencv_objdetect.3.0.0.dylib
+  /usr/local/lib/libopencv_objdetect.3.1.0.dylib
+  /usr/local/lib/libopencv_ocl.2.4.11.dylib
+  /usr/local/lib/libopencv_photo.2.4.11.dylib
+  /usr/local/lib/libopencv_photo.3.0.0.dylib
+  /usr/local/lib/libopencv_photo.3.1.0.dylib
+  /usr/local/lib/libopencv_shape.3.0.0.dylib
+  /usr/local/lib/libopencv_shape.3.1.0.dylib
+  /usr/local/lib/libopencv_stitching.2.4.11.dylib
+  /usr/local/lib/libopencv_stitching.3.0.0.dylib
+  /usr/local/lib/libopencv_stitching.3.1.0.dylib
+  /usr/local/lib/libopencv_superres.2.4.11.dylib
+  /usr/local/lib/libopencv_superres.3.0.0.dylib
+  /usr/local/lib/libopencv_superres.3.1.0.dylib
+  /usr/local/lib/libopencv_video.2.4.11.dylib
+  /usr/local/lib/libopencv_video.3.0.0.dylib
+  /usr/local/lib/libopencv_video.3.1.0.dylib
+  /usr/local/lib/libopencv_videoio.3.0.0.dylib
+  /usr/local/lib/libopencv_videoio.3.1.0.dylib
+  /usr/local/lib/libopencv_videostab.2.4.11.dylib
+  /usr/local/lib/libopencv_videostab.3.0.0.dylib
+  /usr/local/lib/libopencv_videostab.3.1.0.dylib
+
+Warning: Unbrewed header files were found in /usr/local/include.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected header files:
+  /usr/local/include/gflags/gflags.h
+  /usr/local/include/gflags/gflags_completions.h
+  /usr/local/include/gflags/gflags_declare.h
+  /usr/local/include/gflags/gflags_gflags.h
+  /usr/local/include/node/node_internals.h
+  /usr/local/include/node/pthread-fixes.h
+  /usr/local/include/node/smalloc.h
+  /usr/local/include/node/v8stdint.h
+  /usr/local/include/opencv/cv.h
+  /usr/local/include/opencv/cvaux.h
+  /usr/local/include/opencv/cvwimage.h
+  /usr/local/include/opencv/cxcore.h
+  /usr/local/include/opencv/cxmisc.h
+  /usr/local/include/opencv/highgui.h
+  /usr/local/include/opencv/ml.h
+  /usr/local/include/opencv2/calib3d/calib3d_c.h
+  /usr/local/include/opencv2/core/core_c.h
+  /usr/local/include/opencv2/core/cvdef.h
+  /usr/local/include/opencv2/core/hal/interface.h
+  /usr/local/include/opencv2/core/types_c.h
+  /usr/local/include/opencv2/cvconfig.h
+  /usr/local/include/opencv2/flann/all_indices.h
+  /usr/local/include/opencv2/flann/allocator.h
+  /usr/local/include/opencv2/flann/any.h
+  /usr/local/include/opencv2/flann/autotuned_index.h
+  /usr/local/include/opencv2/flann/composite_index.h
+  /usr/local/include/opencv2/flann/config.h
+  /usr/local/include/opencv2/flann/defines.h
+  /usr/local/include/opencv2/flann/dist.h
+  /usr/local/include/opencv2/flann/dummy.h
+  /usr/local/include/opencv2/flann/dynamic_bitset.h
+  /usr/local/include/opencv2/flann/general.h
+  /usr/local/include/opencv2/flann/ground_truth.h
+  /usr/local/include/opencv2/flann/hdf5.h
+  /usr/local/include/opencv2/flann/heap.h
+  /usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+  /usr/local/include/opencv2/flann/index_testing.h
+  /usr/local/include/opencv2/flann/kdtree_index.h
+  /usr/local/include/opencv2/flann/kdtree_single_index.h
+  /usr/local/include/opencv2/flann/kmeans_index.h
+  /usr/local/include/opencv2/flann/linear_index.h
+  /usr/local/include/opencv2/flann/logger.h
+  /usr/local/include/opencv2/flann/lsh_index.h
+  /usr/local/include/opencv2/flann/lsh_table.h
+  /usr/local/include/opencv2/flann/matrix.h
+  /usr/local/include/opencv2/flann/nn_index.h
+  /usr/local/include/opencv2/flann/object_factory.h
+  /usr/local/include/opencv2/flann/params.h
+  /usr/local/include/opencv2/flann/random.h
+  /usr/local/include/opencv2/flann/result_set.h
+  /usr/local/include/opencv2/flann/sampling.h
+  /usr/local/include/opencv2/flann/saving.h
+  /usr/local/include/opencv2/flann/simplex_downhill.h
+  /usr/local/include/opencv2/flann/timer.h
+  /usr/local/include/opencv2/hal/defs.h
+  /usr/local/include/opencv2/highgui/highgui_c.h
+  /usr/local/include/opencv2/imgcodecs/imgcodecs_c.h
+  /usr/local/include/opencv2/imgcodecs/ios.h
+  /usr/local/include/opencv2/imgproc/hal/interface.h
+  /usr/local/include/opencv2/imgproc/imgproc_c.h
+  /usr/local/include/opencv2/imgproc/types_c.h
+  /usr/local/include/opencv2/objdetect/objdetect_c.h
+  /usr/local/include/opencv2/photo/photo_c.h
+  /usr/local/include/opencv2/video/tracking_c.h
+  /usr/local/include/opencv2/videoio/cap_ios.h
+  /usr/local/include/opencv2/videoio/videoio_c.h
+
+Warning: Unbrewed .pc files were found in /usr/local/lib/pkgconfig.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected .pc files:
+  /usr/local/lib/pkgconfig/opencv.pc
+
+Warning: Unbrewed static libraries were found in /usr/local/lib.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected static libraries:
+  /usr/local/lib/libgflags.a
+  /usr/local/lib/libgflags_nothreads.a
+  /usr/local/lib/libopencv_hal.a
+  /usr/local/lib/libopencv_ts.a
+brew doctor  1.12s user 2.37s system 74% cpu 4.691 total
+
+--------------------------------------------------------------------------
+
+> brew cask reinstall xquartz
+==> Tapping caskroom/cask
+Cloning into '/usr/local/Homebrew/Library/Taps/caskroom/homebrew-cask'...
+remote: Counting objects: 3646, done.
+remote: Compressing objects: 100% (3632/3632), done.
+remote: Total 3646 (delta 32), reused 285 (delta 10), pack-reused 0
+Receiving objects: 100% (3646/3646), 1.21 MiB | 1.50 MiB/s, done.
+Resolving deltas: 100% (32/32), done.
+Tapped 0 formulae (3,655 files, 3.8M)
+==> Creating Caskroom at /usr/local/Caskroom
+==> We'll set permissions properly so we won't need sudo in the future
+==> Downloading https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg
+######################################################################## 100.0%
+==> Verifying checksum for Cask xquartz
+==> Running installer for xquartz; your password may be necessary.
+==> Package installers may write to any location; options such as --appdir are ignored.
+Password:
+==> installer: Package name is XQuartz 2.7.11
+==> installer: Upgrading at base path /
+==> installer: The upgrade was successful.
+==> /Library/LaunchAgents/org.macosforge.xquartz.startx.plist: service already loaded
+🍺  xquartz was successfully installed!
+brew cask reinstall xquartz  3.19s user 3.78s system 3% cpu 3:34.60 total
+
+--------------------------------------------------------------------------
+
+[~/project/tanjo/dotfiles]
+ > trash /usr/local/lib/libopencv_*                                                              (git)-[features/homebrew]
+[~/project/tanjo/dotfiles]
+ > ls /usr/local/lib/                                                                            (git)-[features/homebrew]
+total 728
+drwxr-xr-x  12 tanjo  admin     408  1 27 14:21:33 2017 .
+drwxr-xr-x  22 tanjo  wheel     748  1 27 14:00:32 2017 ..
+drwxr-xr-x   3 tanjo  admin     102  2 18 11:37:05 2016 cmake
+drwxr-xr-x   3 tanjo  admin     102  1 27 14:15:54 2017 dtrace
+-rw-r--r--   1 tanjo  admin  186624  5 26 14:35:32 2016 libgflags.a
+-rw-r--r--   1 tanjo  admin  183832  5 26 14:35:32 2016 libgflags_nothreads.a
+drwxr-xr-x  17 tanjo  admin     578  1 27 14:13:53 2017 node_modules
+drwxr-xr-x   3 tanjo  admin     102  1 27 13:43:22 2017 pkgconfig
+drwxr-xr-x   3 tanjo  admin     102  1 27 13:44:09 2017 python2.7
+drwxr-xr-x   3 tanjo  admin     102  2  5 16:09:58 2015 python3.4
+drwxr-xr-x   3 tanjo  admin     102  4 15 17:09:11 2016 python3.5
+drwxr-xr-x   3 tanjo  admin     102  1 27 13:44:10 2017 ruby
+[~/project/tanjo/dotfiles]
+ > trash /usr/local/lib/libgflags*
+
+ --------------------------------------------------------------------------
+
+ > brew doctor                                                                                           (git)-[features/homebrew]
+ Please note that these warnings are just used to help the Homebrew maintainers
+ with debugging if you file an issue. If everything you use Homebrew for is
+ working fine: please don't worry and just ignore them. Thanks!
+
+ Warning: Unbrewed header files were found in /usr/local/include.
+ If you didn't put them there on purpose they could cause problems when
+ building Homebrew formulae, and may need to be deleted.
+
+ Unexpected header files:
+   /usr/local/include/gflags/gflags.h
+   /usr/local/include/gflags/gflags_completions.h
+   /usr/local/include/gflags/gflags_declare.h
+   /usr/local/include/gflags/gflags_gflags.h
+   /usr/local/include/node/node_internals.h
+   /usr/local/include/node/pthread-fixes.h
+   /usr/local/include/node/smalloc.h
+   /usr/local/include/node/v8stdint.h
+   /usr/local/include/opencv/cv.h
+   /usr/local/include/opencv/cvaux.h
+   /usr/local/include/opencv/cvwimage.h
+   /usr/local/include/opencv/cxcore.h
+   /usr/local/include/opencv/cxmisc.h
+   /usr/local/include/opencv/highgui.h
+   /usr/local/include/opencv/ml.h
+   /usr/local/include/opencv2/calib3d/calib3d_c.h
+   /usr/local/include/opencv2/core/core_c.h
+   /usr/local/include/opencv2/core/cvdef.h
+   /usr/local/include/opencv2/core/hal/interface.h
+   /usr/local/include/opencv2/core/types_c.h
+   /usr/local/include/opencv2/cvconfig.h
+   /usr/local/include/opencv2/flann/all_indices.h
+   /usr/local/include/opencv2/flann/allocator.h
+   /usr/local/include/opencv2/flann/any.h
+   /usr/local/include/opencv2/flann/autotuned_index.h
+   /usr/local/include/opencv2/flann/composite_index.h
+   /usr/local/include/opencv2/flann/config.h
+   /usr/local/include/opencv2/flann/defines.h
+   /usr/local/include/opencv2/flann/dist.h
+   /usr/local/include/opencv2/flann/dummy.h
+   /usr/local/include/opencv2/flann/dynamic_bitset.h
+   /usr/local/include/opencv2/flann/general.h
+   /usr/local/include/opencv2/flann/ground_truth.h
+   /usr/local/include/opencv2/flann/hdf5.h
+   /usr/local/include/opencv2/flann/heap.h
+   /usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+   /usr/local/include/opencv2/flann/index_testing.h
+   /usr/local/include/opencv2/flann/kdtree_index.h
+   /usr/local/include/opencv2/flann/kdtree_single_index.h
+   /usr/local/include/opencv2/flann/kmeans_index.h
+   /usr/local/include/opencv2/flann/linear_index.h
+   /usr/local/include/opencv2/flann/logger.h
+   /usr/local/include/opencv2/flann/lsh_index.h
+   /usr/local/include/opencv2/flann/lsh_table.h
+   /usr/local/include/opencv2/flann/matrix.h
+   /usr/local/include/opencv2/flann/nn_index.h
+   /usr/local/include/opencv2/flann/object_factory.h
+   /usr/local/include/opencv2/flann/params.h
+   /usr/local/include/opencv2/flann/random.h
+   /usr/local/include/opencv2/flann/result_set.h
+   /usr/local/include/opencv2/flann/sampling.h
+   /usr/local/include/opencv2/flann/saving.h
+   /usr/local/include/opencv2/flann/simplex_downhill.h
+   /usr/local/include/opencv2/flann/timer.h
+   /usr/local/include/opencv2/hal/defs.h
+   /usr/local/include/opencv2/highgui/highgui_c.h
+   /usr/local/include/opencv2/imgcodecs/imgcodecs_c.h
+   /usr/local/include/opencv2/imgcodecs/ios.h
+   /usr/local/include/opencv2/imgproc/hal/interface.h
+   /usr/local/include/opencv2/imgproc/imgproc_c.h
+   /usr/local/include/opencv2/imgproc/types_c.h
+   /usr/local/include/opencv2/objdetect/objdetect_c.h
+   /usr/local/include/opencv2/photo/photo_c.h
+   /usr/local/include/opencv2/video/tracking_c.h
+   /usr/local/include/opencv2/videoio/cap_ios.h
+   /usr/local/include/opencv2/videoio/videoio_c.h
+
+ Warning: Unbrewed .pc files were found in /usr/local/lib/pkgconfig.
+ If you didn't put them there on purpose they could cause problems when
+ building Homebrew formulae, and may need to be deleted.
+
+ Unexpected .pc files:
+   /usr/local/lib/pkgconfig/opencv.pc
+ brew doctor  0.96s user 0.81s system 84% cpu 2.097 total
+ [~/project/tanjo/dotfiles]
+  > trash /usr/local/include/opencv/                                                                                                                                              (git)-[features/homebrew]
+ [~/project/tanjo/dotfiles]
+  > trash /usr/local/include/opencv2/                                                                                                                                             (git)-[features/homebrew]
+
+--------------------------------------------------------------------------
+
+[~/project/tanjo/dotfiles]
+ > brew doctor                                                                                                                                                                   (git)-[features/homebrew]
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: Unbrewed header files were found in /usr/local/include.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected header files:
+  /usr/local/include/gflags/gflags.h
+  /usr/local/include/gflags/gflags_completions.h
+  /usr/local/include/gflags/gflags_declare.h
+  /usr/local/include/gflags/gflags_gflags.h
+  /usr/local/include/node/node_internals.h
+  /usr/local/include/node/pthread-fixes.h
+  /usr/local/include/node/smalloc.h
+  /usr/local/include/node/v8stdint.h
+
+Warning: Unbrewed .pc files were found in /usr/local/lib/pkgconfig.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected .pc files:
+  /usr/local/lib/pkgconfig/opencv.pc
+brew doctor  1.00s user 0.70s system 86% cpu 1.962 total
+[~/project/tanjo/dotfiles]
+ > trash /usr/local/include/gflags
+[~/project/tanjo/dotfiles]
+ > trash /usr/local/include/node
+
+--------------------------------------------------------------------------
+
+[~/project/tanjo/dotfiles]
+ > brew doctor                                                                                                                                                                   (git)-[features/homebrew]
+Your system is ready to brew.
+brew doctor  1.05s user 1.54s system 65% cpu 3.989 total
