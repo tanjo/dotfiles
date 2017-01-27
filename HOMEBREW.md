@@ -1,0 +1,103 @@
+# Homebrew
+
+## Install
+
+- [Homebrew — macOS 用パッケージマネージャー](http://brew.sh/index_ja.html)
+
+```
+./homebrewinstall
+```
+
+## UnInstall
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+```
+
+### 過去の遺産
+
+```sh
+> brew list
+
+ant			gcc@4.7			lame			openssl
+appledoc		gcc@4.9			libevent		pango
+autoconf		gdbm			libffi			pcre
+automake		gettext			libgpg-error		pixman
+bison			git			libksba			pkg-config
+cairo			glib			libmpc			ppl011
+carthage		gmp			libmpc08		ppl@0.11
+clib			gmp4			libmpc@0.8		python
+cloog			gmp@4			libpng			python3
+cloog-ppl015		gobject-introspection	libsodium		readline
+cloog018		harfbuzz		libtiff			redis
+cloog@0.15		hub			libtool			ricty
+cmake			icu4c			libvo-aacenc		ruby
+czmq			ilmbase			libyaml			sqlite
+eigen			imagemagick		memcached		uncrustify
+elasticsearch		isl			mongodb			watch
+ffmpeg			isl011			mpfr			x264
+fontconfig		isl@0.11		mpfr2			xctool
+fontforge		isl@0.12		mpfr@2			xvid
+freetype		jasper			node			xz
+gcc			jenkins			oniguruma		zeromq
+gcc47			jpeg			openexr			zsh
+gcc49			jq			openssh
+```
+
+### アンインストール時のWarning
+
+```sh
+> ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+Warning: This script will remove:
+/Applications/IDLE 3.app -> /usr/local/Cellar/python3/3.4.1_1/IDLE 3.app
+/Applications/Python Launcher 3.app -> /usr/local/Cellar/python3/3.4.1_1/Python Launcher 3.app
+/Users/tanjo/Library/Caches/Homebrew/
+/Users/tanjo/Library/Logs/Homebrew/
+/usr/local/Cellar/
+/usr/local/Homebrew/
+/usr/local/Homebrew/.github/
+/usr/local/Homebrew/.gitignore
+/usr/local/Homebrew/.travis.yml
+/usr/local/Homebrew/.yardopts
+/usr/local/Homebrew/CODEOFCONDUCT.md
+/usr/local/Homebrew/CONTRIBUTING.md
+/usr/local/Homebrew/LICENSE.txt
+/usr/local/Homebrew/Library/
+/usr/local/Homebrew/README.md
+/usr/local/Homebrew/bin/brew
+/usr/local/Homebrew/completions/
+/usr/local/Homebrew/docs/
+/usr/local/Homebrew/manpages/
+/usr/local/bin/brew -> /usr/local/Homebrew/bin/brew
+/usr/local/etc/bash_completion.d/brew -> /usr/local/Homebrew/completions/bash/brew
+/usr/local/share/doc/homebrew -> /usr/local/Homebrew/docs
+/usr/local/share/man/man1/brew-cask.1 -> /usr/local/Homebrew/manpages/brew-cask.1
+/usr/local/share/man/man1/brew.1 -> /usr/local/Homebrew/manpages/brew.1
+/usr/local/share/zsh/site-functions/_brew -> /usr/local/Homebrew/completions/zsh/_brew
+/usr/local/share/zsh/site-functions/_brew_cask -> /usr/local/Homebrew/completions/zsh/_brew_cask
+/usr/local/var/homebrew/locks/update
+Are you sure you want to uninstall Homebrew? [y/N] y
+==> Removing Homebrew installation...
+==> Removing empty directories...
+==> /usr/bin/sudo /usr/bin/find /usr/local/Frameworks /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share /usr/local/var -name .DS_Store -delete
+Password:
+==> /usr/bin/sudo /usr/bin/find /usr/local/Frameworks /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share /usr/local/var -depth -type d -empty -exec rmdir {} ;
+==> Homebrew uninstalled!
+The following possible Homebrew files were not deleted:
+/usr/local/.DS_Store
+/usr/local/_td/
+/usr/local/bin/
+/usr/local/etc/
+/usr/local/foreman/
+/usr/local/go/
+/usr/local/heroku/
+/usr/local/include/
+/usr/local/lib/
+/usr/local/LICENSE.rst
+/usr/local/n/
+/usr/local/README.rst
+/usr/local/share/
+/usr/local/var/
+You may wish to remove them yourself.
+ruby -e   8.93s user 18.22s system 32% cpu 1:23.15 total
+```
