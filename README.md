@@ -19,7 +19,7 @@ mkdir ~/project
 - [Atom](https://atom.io/)
 - [Google 日本語入力](https://www.google.co.jp/ime/)
 - CotEditor
-- Chrome
+- [Chrome](https://www.google.co.jp/chrome/)
 - Xcode
   - [Preferences...] -> [Downloads] ・Command Line Tools
 - [tanjo/Gyazo: ローカル保存をするように変更した Gyazo](https://github.com/tanjo/Gyazo)
@@ -30,7 +30,7 @@ mkdir ~/project
 - FireAlpaca
 - Genymotion
 - AndroidStudio
-- LINE
+- [LINE](http://line.me/ja/download)
 - TweetDeck
 - Gyazo GIF
 - CymoNEXT
@@ -39,7 +39,7 @@ mkdir ~/project
 - [mitmproxy](https://mitmproxy.org/)
 - Robomongo
 - VLC
-- Google Noto Fonts
+- [Google Noto Fonts](http://www.google.com/get/noto/)
 - OmniDiskSweeper
 - Pushsbullet
 - Sequel Pro
