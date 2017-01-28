@@ -24,4 +24,5 @@ chsh -s /bin/zsh
 
 ### 設定
 
+- `touch .zshrc`
 - `chsh -s /usr/bin/zsh`
