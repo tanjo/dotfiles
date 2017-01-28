@@ -1,6 +1,8 @@
 # zsh
 
-## 設定
+## Mac
+
+### 設定
 
 - `/etc/shells` に `/bin/zsh` を追加する必要がある
 - デフォルトのシェルを変更
@@ -17,3 +19,9 @@ echo "export PATH=/usr/local/bin:\$PATH" >> ~/.zshrc
 ```sh
 chsh -s /bin/zsh
 ```
+
+## Windows
+
+### 設定
+
+- `chsh -s /usr/bin/zsh`
