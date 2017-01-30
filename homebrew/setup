@@ -24,6 +24,7 @@ install_package() {
   brew install hub
   brew install cmake
   brew install appledoc
+  brew install bazel
 }
 
 # Main

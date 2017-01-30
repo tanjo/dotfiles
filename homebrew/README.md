@@ -10,7 +10,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/hom
 
 ## Setup
 
-node, git, openssl, ruby, ffmpeg, python, zsh, mongodb, redis, hub, cmake, appledoc
+node, git, openssl, ruby, ffmpeg, python, zsh, mongodb, redis, hub, cmake, appledoc, bazel
 
 ```
 bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/setup)"
