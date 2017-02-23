@@ -25,6 +25,8 @@ install_package() {
   brew install cmake
   brew install appledoc
   brew install bazel
+  brew install docker
+  brew install lua
 }
 
 # Main
