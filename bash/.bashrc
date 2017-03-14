@@ -14,6 +14,7 @@ alias cdtanjo="cd ~/project/tanjo"
 alias cdgoogleime="cd ~/project/tanjo/google-ime-custom-dictionary"
 alias cddotfiles="cd ~/project/tanjo/dotfiles"
 alias cdhomepage="cd ~/project/tanjo.github.io"
+alias cdtil="cd ~/project/tanjo/til"
 
 alias bashedit="atom ~/.bashrc"
 alias bashupdate="source ~/.bashrc"
