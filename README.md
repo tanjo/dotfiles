@@ -140,6 +140,16 @@ https://github.com/tanjo/Gyazo
 
 https://developer.android.com/studio/install.html
 
+#### Google Drive
+
+https://tools.google.com/dlpage/drive/thankyou.html?hl=ja
+
+#### LINE
+
+#### CotEditor
+
+#### TweetDeck
+
 ## Windows
 
 Run `Windows Update`
