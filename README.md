@@ -150,6 +150,15 @@ https://tools.google.com/dlpage/drive/thankyou.html?hl=ja
 
 #### TweetDeck
 
+#### Facebook Messenger
+
+- [Goofy — Your Facebook Messenger client for OS X](http://www.goofyapp.com/)
+
+#### FireAlpaca
+
+- [フリー ペイントツール（Mac/Windows 両対応）FireAlpaca［ファイア アルパカ］](http://firealpaca.com/ja/)
+
+
 ## Windows
 
 Run `Windows Update`
