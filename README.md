@@ -60,7 +60,7 @@ https://itunes.apple.com/jp/app/slack/id803453959?mt=12
 
 #### Xcode
 
-
+App Store からインストール
 
 #### Xcode Command Line Tools
 
@@ -71,6 +71,8 @@ https://developer.apple.com/download/more/?=for%20Xcode
 #### Google 日本語入力
 
 https://www.google.co.jp/ime/
+
+- キーボードの選択をGoolge日本語入力だけにする
 
 #### Atom
 
@@ -133,6 +135,9 @@ https://github.com/tanjo/Gyazo
 - Thumb Forward Button を Mission Control にして選択も Mission Control を選択する
 - Hidden Thumb Button を Open Application にして Select Other... で Gyazo を選択する
 
+#### Android Studio
+
+https://developer.android.com/studio/install.html
 
 ## Windows
 
