@@ -73,6 +73,7 @@ https://developer.apple.com/download/more/?=for%20Xcode
 https://www.google.co.jp/ime/
 
 - キーボードの選択をGoolge日本語入力だけにする
+- キー入力の速度を変更する
 
 #### Atom
 
