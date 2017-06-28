@@ -118,6 +118,10 @@ pbcopy < ~/.ssh/github/tanjo/id_rsa.pub
 
 https://github.com/settings/keys
 
+#### Gyazo (Local)
+
+https://github.com/tanjo/Gyazo
+
 ## Windows
 
 Run `Windows Update`
