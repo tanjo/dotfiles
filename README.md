@@ -48,6 +48,76 @@ mkdir ~/project
 
 TBD
 
+### 2017/06/29
+
+#### Microsoft Office 365
+
+https://www.office.com/
+
+#### Slack
+
+https://itunes.apple.com/jp/app/slack/id803453959?mt=12
+
+#### Xcode
+
+
+
+#### Xcode Command Line Tools
+
+以下のURLより
+
+https://developer.apple.com/download/more/?=for%20Xcode
+
+#### Google 日本語入力
+
+https://www.google.co.jp/ime/
+
+#### Atom
+
+https://atom.io/
+
+#### Homebrew
+
+#### bash
+
+#### zsh
+
+#### Logicool ドライバ
+
+http://support.logicool.co.jp/ja_jp/software/unifying
+
+#### npm
+
+- trash-cli
+
+#### Github
+
+- [Generating a new SSH key and adding it to the ssh\-agent \- User Documentation](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
+```
+mkdir -p ~/.ssh/github/tanjo/
+ssh-keygen -t rsa -b 4096 -C "tanjo@users.noreply.github.com"
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/github/tanjo/id_rsa
+```
+
+##### config
+
+```
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+```
+
+##### Adding a new SSH
+
+```
+pbcopy < ~/.ssh/github/tanjo/id_rsa.pub
+```
+
+https://github.com/settings/keys
+
 ## Windows
 
 Run `Windows Update`
