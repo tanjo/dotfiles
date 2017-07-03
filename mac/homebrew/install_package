@@ -1,0 +1,12 @@
+#!/bin/bash -eu
+
+# Install package
+install_package() {
+  brew install git
+  brew install node
+  brew install hub
+  brew install zsh
+}
+
+# Main
+install_package

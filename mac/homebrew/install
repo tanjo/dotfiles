@@ -4,8 +4,7 @@
 install_homebrew() {
   # if 文で brew があったら走らない
   if type brew >/dev/null 2>&1; then
-    echo "brew のコマンドの存在を確認."
-    echo "処理を終了します."
+    echo "Homebrew は既にインストール済みです"
   else
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi

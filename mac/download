@@ -1,0 +1,69 @@
+#!/bin/bash -eu
+
+download() {
+  if [ ! -d ~/project/tanjo/dotfiles ]; then
+    pushd ~/project/tanjo/
+    git clone https://github.com/tanjo/dotfiles.git
+    git remote set-url origin git@github.com:tanjo/dotfiles.git
+    popd
+  else
+    echo "ディレクトリが既に存在します" 1>&2
+  fi
+
+  if ! type xcodebuild >/dev/null 2>&1; then
+    open https://developer.apple.com/download/more/?=for%20Xcode
+
+    while true; do
+      read -p "Command Line Tools をダウンロードしてインストールしてください [Y/n] " Result
+      case $Result in
+        '' | [Yy]* )
+          echo "確認中..."
+          break;
+          ;;
+        [Nn]* )
+          echo "終了します"
+          exit 1;
+          ;;
+        * )
+          echo "[Y/n]で答えろ"
+      esac
+    done;
+
+    echo "-------------------------"
+    if xcodebuild -version; then
+      echo -e "-------------------------"
+      echo "Xcode Command Line Tools の存在を確認しました"
+    else
+      echo "ないやんけ"
+      exit 1
+    fi
+    echo -e "次へ進みます"
+  fi
+
+  if bash mac/homebrew/install; then
+    echo "-------------------------"
+    if brew --version; then
+      echo -e "-------------------------"
+      echo "Homebrew の存在をしました"
+    else
+      echo "Homebrew ないやん"
+    fi
+  else
+    echo "Homebrew のインストール失敗した"
+    exit 1
+  fi
+
+  echo -e "次へ進みます"
+
+  if bash mac/homebrew/install_package; then
+    echo "Homebrew で各種パッケージをインストールしました"
+  else
+    echo "各種パッケージのインストール失敗したわ"
+  fi
+
+  echo -e "次へ進みます"
+
+  echo "終了"
+}
+
+download
