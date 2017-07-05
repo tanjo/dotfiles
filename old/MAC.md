@@ -79,6 +79,8 @@ https://atom.io/
 
 #### Homebrew
 
+#### ffmpeg
+
 #### bash
 
 #### zsh
