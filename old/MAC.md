@@ -85,6 +85,12 @@ https://atom.io/
 
 #### zsh
 
+#### heroku
+
+#### mecab
+
+#### mecab-ipadic
+
 #### Logicool ドライバ
 
 http://support.logicool.co.jp/ja_jp/software/unifying
