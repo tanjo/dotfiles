@@ -91,6 +91,8 @@ https://atom.io/
 
 #### mecab-ipadic
 
+#### ruby
+
 #### Logicool ドライバ
 
 http://support.logicool.co.jp/ja_jp/software/unifying
