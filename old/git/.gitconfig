@@ -33,5 +33,5 @@
     recommit = commit -c ORIG_HEAD
     w = browse
     wi = browse -- issues
-		features = "!f() { git checkout -b features/$1 origin/develop; }; f"
-		issues = "!f() { git checkout -b issues/$1 origin/develop; }; f"
+    features = "!f() { git checkout -b features/$1 origin/develop; }; f"
+    issues = "!f() { git checkout -b issues/$1 origin/develop; }; f"
