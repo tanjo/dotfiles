@@ -19,7 +19,7 @@
     taus = status
     ta = status
     d = diff --word-diff
-    b = branch
+    b = branch -v
     c = checkout
     pod = pull origin develop
     sb = show-branch
