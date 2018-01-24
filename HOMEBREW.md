@@ -28,7 +28,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/hom
 - docker-machine
 
 ```
-bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/setup)"
+bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/insstall_package)"
 ```
 
 ## UnInstall

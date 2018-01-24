@@ -32,6 +32,8 @@
 
 ## for Mac
 
+- [Macについて](./MAC.md)
+
 - [Bash](./BASH.md)
 - [Homebrew](./HOMEBREW.md)
 - [Project](./PROJECT.md)
