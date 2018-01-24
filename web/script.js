@@ -24,7 +24,10 @@ class MarkdownHtml {
     var hash = url.slice(1).split('&');
     var query = hash
         .map((h) => h.split('='))
-        .reduce(((queries, h) => queries[h[0]] = h[1]), []);
+        .reduce((queries, h) => {
+          queries[h[0]] = h[1];
+          return queries;
+        }, []);
     if (query) {
       return query;
     }
@@ -32,11 +35,10 @@ class MarkdownHtml {
   }
 
   getQ() {
-    return this.getUrlQuery().q ? this.getUrlQuery().q : MarkdownHtml.DEFAULT_PAGE;
+    return this.getUrlQuery().q || MarkdownHtml.DEFAULT_PAGE;
   }
 
   getMarkdown() {
-    console.log(this.getQ());
     return this.requestGet(MarkdownHtml.BASE_URL + "/" + this.getQ().toUpperCase() + MarkdownHtml.MARKDOWN_FILENAME_EXTENSION);
   }
 
