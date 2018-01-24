@@ -1,16 +1,18 @@
 # dotfiles
 
-- [このサイトについて](?q=site)
+- [このサイトについて](SITE.md)
 
 ## Commons
 
-- [Git](?q=git)
-- [Zsh](?q=zsh)
+- [Git](./GIT.md)
+- [Slack](./SLACK.md)
+- [Zsh](./ZSH.md)
 
 ## for Mac
 
-- [Bash](?q=bash)
-- [Homebrew](?q=homebrew)
-- [Project](?q=project)
+- [Bash](./BASH.md)
+- [Homebrew](./HOMEBREW.md)
+- [Project](./PROJECT.md)
+- [Terminal](./TERMINAL.md)
 
 ## for Windows
