@@ -64,7 +64,7 @@ class MarkdownHtml {
     return new Promise((resolve, reject) => {
       this.getMarkdown()
         .then((responseText) => {
-          resolve(responseText.replace(/\.\/(.*)\.md/i,"?q=$1"));
+          resolve(responseText.replace(/\.\/(.*)\.md/gi,"?q=$1"));
         })
         .catch((error) => {
           resolve(MarkdownHtml.MARKDOWN_CONTENT_404);

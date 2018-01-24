@@ -1,6 +1,6 @@
 # dotfiles
 
-- [このサイトについて](SITE.md)
+- [このサイトについて](./SITE.md)
 
 ## Commons
 
@@ -50,6 +50,7 @@
 
 Run `Windows Update`
 
+- [apt](./APT.md)
 - サクラエディタ
 - VisualStudio
 
