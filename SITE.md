@@ -4,8 +4,9 @@
 
 ## icon
 
+- Size(144, 144)
 - Tsukushi A Round Gothic
 - 18pt
 - Bold
-- アンチエイリアシング
-- rgb(255, 151, 0)
+- Anti-Aliasing
+- RGB(255, 151, 0)
