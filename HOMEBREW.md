@@ -26,6 +26,8 @@ bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/hom
 - lua
 - docker
 - docker-machine
+- mecab
+- mecab-ipadic
 
 ```
 bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/insstall_package)"
