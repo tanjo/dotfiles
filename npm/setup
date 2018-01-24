@@ -1,0 +1,9 @@
+#!/bin/bash -eu
+
+# Install package
+install_package() {
+  npm install --global trash-cli
+}
+
+# Main
+install_package
