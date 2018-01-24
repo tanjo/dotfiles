@@ -1,4 +1,4 @@
-# project
+# Project
 
 主な開発は `~/project` で行う.
 
