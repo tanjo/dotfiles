@@ -34,4 +34,6 @@
     w = browse
     wi = browse -- issues
     features = "!f() { git fetch; git checkout -b features/$1 origin/develop; }; f"
-		issues = "!f() { git fetch; git checkout -b issues/$1 origin/develop; }; f"
+    issues = "!f() { git fetch; git checkout -b issues/$1 origin/develop; }; f"
+    fd = "!f() { git diff $(git rev-list -n 1 HEAD -- $1)^ -- $1; }; f"
+
