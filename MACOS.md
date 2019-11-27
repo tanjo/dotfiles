@@ -2,7 +2,7 @@
 
 ## npm
 
-# ## インストール
+## インストール
 
 ```
 bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/npm/setup)"
