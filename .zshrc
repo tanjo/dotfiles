@@ -163,3 +163,6 @@ bindkey '^m' do_enter
 local p_cdir="%B%F{yellow}[%~]%f%b"$'\n'
 local p_mark="%B%(?, %F{green}, %F{red})>%f%b"
 PROMPT="$p_cdir$p_mark "
+
+# added by travis gem
+[ -f /Users/tanjo/.travis/travis.sh ] && source /Users/tanjo/.travis/travis.sh
