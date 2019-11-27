@@ -50,3 +50,8 @@ sudo apt install -y build-essential
 sudo apt install -y zsh
 sudo apt install -y python
 ```
+
+### Uninstall
+
+- Norton Internet Security
+- Bing Bar
