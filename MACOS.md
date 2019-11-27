@@ -83,7 +83,11 @@ http://support.logicool.co.jp/ja_jp/software/unifying
 
 ### Download
 
- - [iTunes](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12)
+- [‎「Xcode」をMac App Storeで](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12)
+
+### Xcode Command Line Tools
+
+- [More Software Downloads - Apple Developer](https://developer.apple.com/download/more/?=for%20Xcode)
 
 ## git & github
 

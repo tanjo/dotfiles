@@ -12,7 +12,32 @@
 
 ### settings
 
-```
+```sh
 touch .zshrc
 chsh -s /usr/bin/zsh
+```
+
+## apt
+
+### インストール一覧表示
+
+```sh
+apt list --installed
+```
+
+### 更新
+
+```sh
+apt update
+apt upgrade
+```
+
+### インストール
+
+```sh
+sudo apt install -y nodejs
+sudo apt install -y npm
+sudo apt install -y build-essential
+sudo apt install -y zsh
+sudo apt install -y python
 ```
