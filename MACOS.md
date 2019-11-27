@@ -1,12 +1,43 @@
 # Mac OS
 
+## Homebrew
+
+- [Homebrew — macOS 用パッケージマネージャー](http://brew.sh/index_ja.html)
+
+### Install
+
+```sh
+bash -c "$(curl -L https://raw.githubusercontent.com/tanjo/dotfiles/gh-pages/homebrew/install)"
+```
+
+### インストールリスト
+- [homebrew.txt](homebrew.txt)
+
+  ```sh
+  brew leaves > homebrew.txt
+  ```
+
+## Screenshot
+
+### Mac Screenshot location
+
+```sh
+defaults write com.apple.screencapture location ~/Pictures/Screenshot/
+killall SystemUIServer
+```
+
+## MEMO
+
+- `.localized` という空のファイルを作成すると日本語になる.
+- `.com.apple.timemachine.supported` は Time Machine 関連のファイル
+
 ## Project
 
 主な開発は `~/project` で行う.
 
 ### Generate Directory
 
-```
+```sh
 mkdir ~/project
 ```
 
@@ -30,7 +61,7 @@ http://support.logicool.co.jp/ja_jp/software/unifying
 ## Terminal
 
 - カスタムスキン
-  - Custom.terminal
+  - [Custom.terminal](Custom.terminal)
 
 ## Slack
 
