@@ -1,5 +1,10 @@
 # Mac OS
 
+## Terminal
+
+- カスタムスキン
+  - Custom.terminal
+
 ## Slack
 
 ### Sidebar Theme
