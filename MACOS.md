@@ -1,8 +1,48 @@
 # Mac OS
 
+## git & github
+
+### git
+
+```sh
+cp .gitconfig ~/.gitconfig
+cp .gitignore ~/.gitignore
+```
+
+### github
+
+#### ssh
+
+- [Generating a new SSH key and adding it to the ssh\-agent \- User Documentation](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
+```sh
+mkdir -p ~/.ssh/github/tanjo/
+ssh-keygen -t rsa -b 4096 -C "tanjo@users.noreply.github.com"
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/github/tanjo/id_rsa
+```
+
+#### Adding a new ssh
+
+```sh
+pbcopy < ~/.ssh/github/tanjo/id_rsa.pub
+```
+
+https://github.com/settings/keys
+
+
+#### config
+
+```sh
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+```
+
 ## bash & zsh
 
-### settings
+### bash
 
 ```sh
 cp bash/.bash_profile ~/.bash_profile
@@ -10,7 +50,7 @@ source ~/.bash_profile
 cp bash/.bashrc ~/.bashrc
 source ~/.bashrc
 ```
-### default editor : zsh
+### zsh
 
 - `/etc/shells` に `/bin/zsh` を追加する必要がある
 - デフォルトのシェルを変更

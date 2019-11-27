@@ -1,11 +1,14 @@
 [user]
-	name = tanjo
-	email = tanjo@users.noreply.github.com
+    name = tanjo
+    email = tanjo@users.noreply.github.com
 [color]
-	ui = auto
+    ui = auto
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [alias]
+    again = commit --amend -a --no-edit
+    back = reset --soft HEAD~
+    logs = shortlog
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     pullreq = checkout -t
@@ -36,4 +39,8 @@
     features = "!f() { git fetch; git checkout -b features/$1 origin/develop; }; f"
     issues = "!f() { git fetch; git checkout -b issues/$1 origin/develop; }; f"
     fd = "!f() { git diff $(git rev-list -n 1 HEAD -- $1)^ -- $1; }; f"
-
+    search-all = "!f() { git grep $1 $(git rev-list --all); }; f"
+    search = "!f() { git grep $1 $(git rev-list HEAD...HEAD~); }; f"
+    addnewonly = "!f() { git add $(git ls-files -o --exclude-standard); }; f"
+    adddiff = "!f() { git diff $(git rev-parse --abbrev-ref @)..$1 | git apply; }; f"
+    diffstash=diff stash@{0}
