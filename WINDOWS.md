@@ -7,7 +7,7 @@
 - キーボードの選択をGoolge日本語入力だけにする
 - キー入力の速度を変更する
 
-- [キーマップ](./googleime/keymap.txt)を設定する
+- [キーマップ](./keymap.txt)を設定する
 
 ## Slack
 
