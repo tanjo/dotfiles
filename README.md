@@ -1,6 +1,6 @@
 # dotfiles
 
-- [Mac OS](MACOS.md)
+- [Mac](MAC.md)
 - [Windows](WINDOWS.md)
 
 ## このサイトについて
