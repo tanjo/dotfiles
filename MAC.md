@@ -93,6 +93,19 @@ npm install --global trash-cli
 
 ## GitHub
 
+### hub
+
+- [github/hub](https://github.com/github/hub)
+
+### ~/.config/hub
+
+```yaml
+github.com:
+- user: tanjo
+  oauth_token: [GitHubのパーソナルアクセストークン]
+  protocol: https
+```
+
 ### SSH
 
 - [Generating a new SSH key and adding it to the ssh\-agent \- User Documentation](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
@@ -163,3 +176,5 @@ killall SystemUIServer
 - `.localized` という空のファイルを作成すると日本語になる.
 - `.com.apple.timemachine.supported` は Time Machine 関連のファイル.
 - 主な開発は `~/project` で行う.
+- `sudo xcodebuild -license` が要求されることがある.
+- `git submodule update --init --recursive` でサブモジュールをダウンロード.
