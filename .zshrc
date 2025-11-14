@@ -121,7 +121,11 @@ zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
-#
+# http://www.slideshare.net/tetutaro/zsh-20923001
+local p_cdir="%B%F{yellow}[%~]%f%b"
+local p_mark=$'\n'"%B%(?, %F{green}, %F{red})>%f%b "
+
+# vcs_info の設定を有効化
 function _update_vcs_info_msg() {
 	psvar=()
 	LANG=en_US.UTF-8 vcs_info
@@ -134,7 +138,8 @@ function _update_vcs_info_msg() {
 	fi
 }
 add-zsh-hook precmd _update_vcs_info_msg
-RPROMPT="%1(v|%F{green}%1v%f%F{yellow}%2v%f|)"
+PROMPT="$p_cdir %1(v|%F{green}%1v%f%F{yellow}%2v%f|)$p_mark"
+RPROMPT=""
 
 ## Enter押したらlsとgit statusを表示する
 ## Mavericks だと動作が超遅いのでコメントアウト（2014/06/17）
@@ -158,11 +163,6 @@ function do_enter() {
 }
 zle -N do_enter
 bindkey '^m' do_enter
-
-# http://www.slideshare.net/tetutaro/zsh-20923001
-local p_cdir="%B%F{yellow}[%~]%f%b"$'\n'
-local p_mark="%B%(?, %F{green}, %F{red})>%f%b"
-PROMPT="$p_cdir$p_mark "
 
 # added by travis gem
 [ -f /Users/tanjo/.travis/travis.sh ] && source /Users/tanjo/.travis/travis.sh
