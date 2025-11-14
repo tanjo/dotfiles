@@ -25,22 +25,30 @@ path=(~/bin(N-/) /usr/local/bin(N-/) ${path})
 # =============================================================================
 # 履歴設定
 # =============================================================================
-HISTFILE=$HOME/.zsh-history
+# 履歴ファイルの保存先
+HISTFILE="$HOME/.zsh-history"
+
+# メモリに展開する履歴の数
 HISTSIZE=100000
+
+# ファイルに保存する履歴の数
 SAVEHIST=100000
 
 # =============================================================================
 # 補完設定
 # =============================================================================
+# 補完機能を有効化
 autoload -U compinit
 compinit
 
-# 補完候補のカーソル選択を有効に
+# 補完候補をカーソルで選択可能にする
 zstyle ':completion:*:default' menu select=1
 
-# 補完候補の色づけ
-[ -x /usr/bin/dircolors ] && eval 'dircolors -b'
-export ZLS_COLORS=$LS_COLORS
+# 補完候補に色を付ける
+if [ -x /usr/bin/dircolors ]; then
+    eval 'dircolors -b'
+fi
+export ZLS_COLORS="$LS_COLORS"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # =============================================================================
@@ -135,13 +143,17 @@ setopt hist_no_store           # history (fc -l) コマンドをヒストリリ�
 # =============================================================================
 # プロンプト・色設定
 # =============================================================================
+# 色機能を有効化
 autoload -Uz colors
 colors
 
+# フック機能を有効化
 autoload -Uz add-zsh-hook
+
+# バージョン管理システム情報を取得する機能を有効化
 autoload -Uz vcs_info
 
-# vcs_info 設定
+# vcs_info で対応するバージョン管理システム
 zstyle ':vcs_info:*' enable git svn hg bzr
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
 zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
@@ -149,24 +161,28 @@ zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
 # プロンプト設定
-local p_cdir="%B%F{yellow}[%~]%f%b"
-local p_mark=$'\n'"%B%(?, %F{green}, %F{red})>%f%b "
+# カレントディレクトリ表示（黄色、太字）
+local prompt_current_dir="%B%F{yellow}[%~]%f%b"
 
-# vcs_info の更新関数
+# コマンド入力マーク（成功時は緑、失敗時は赤）
+local prompt_mark=$'\n'"%B%(?, %F{green}, %F{red})>%f%b "
+
+# vcs_info の情報を更新する関数
 function _update_vcs_info_msg() {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 
-    # git stash の数を表示
-    if [[ -e $PWD/.git/refs/stash ]]; then
-        stashes=$(git stash list 2>/dev/null | wc -l)
-        psvar[2]=" @${stashes// /}"
+    # git stash がある場合、その数を表示
+    if [[ -e "$PWD/.git/refs/stash" ]]; then
+        local stash_count=$(git stash list 2>/dev/null | wc -l)
+        psvar[2]=" @${stash_count// /}"
     fi
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
-PROMPT="$p_cdir %1(v|%F{green}%1v%f%F{yellow}%2v%f|)$p_mark"
+# プロンプトを設定
+PROMPT="$prompt_current_dir %1(v|%F{green}%1v%f%F{yellow}%2v%f|)$prompt_mark"
 PROMPT2="%{${fg[blue]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
 RPROMPT=""
@@ -174,24 +190,27 @@ RPROMPT=""
 # =============================================================================
 # カスタム関数・キーバインド
 # =============================================================================
-# Enter押したら git status を表示する
+# Enterキーを押したときに git status を表示する関数
 function do_enter() {
+    # バッファに入力がある場合は通常通り実行
     if [ -n "$BUFFER" ]; then
         zle accept-line
         return 0
     fi
+    
     echo
+    
+    # Gitリポジトリ内の場合は git status を表示
     if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
         git status
     fi
+    
     zle reset-prompt
     return 0
 }
-zle -N do_enter
-bindkey '^m' do_enter
 
-# =============================================================================
-# 外部ファイル読み込み
-# =============================================================================
-# travis gem
-[ -f /Users/tanjo/.travis/travis.sh ] && source /Users/tanjo/.travis/travis.sh
+# 関数をウィジェットとして登録
+zle -N do_enter
+
+# Enterキー（Ctrl+M）にバインド
+bindkey '^m' do_enter
