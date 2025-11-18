@@ -23,8 +23,7 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 ## 補完機能の強化
-autoload -U compinit
-compinit
+autoload -Uz compinit && compinit
 
 ## コアダンプサイズを制限
 limit coredumpsize 102400

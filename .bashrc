@@ -2,30 +2,25 @@ alias javac="javac -J-Dfile.encoding=UTF-8"
 alias javah="javah -J-Dfile.encoding=UTF-8"
 alias java="java -Dfile.encoding=UTF-8"
 
-# editor
-alias cot="open -a /Applications/CotEditor.app"
-alias atom="open -a /Applications/Atom.app"
-
 # git
 alias pullreq="git checkout -t"
 alias pullrebase="git\ pull\ --rebase"
 
 # directory
 alias cdproject="cd ~/project"
-
 alias cdtanjo="cd ~/project/tanjo"
 alias cddotfiles="cd ~/project/tanjo/dotfiles"
 alias cdhomepage="cd ~/project/tanjo/tanjo.github.io"
 
 # bash & zsh
-alias bashedit="cot ~/.bashrc"
+alias bashedit="code ~/.bashrc"
 alias bashupdate="source ~/.bashrc"
-alias zshedit="cot ~/.zshrc"
+alias zshedit="code ~/.zshrc"
 alias zshupdate="source ~/.zshrc"
-alias gitconfigedit="cot ~/.gitconfig"
+alias gitconfigedit="code ~/.gitconfig"
 
 # Ruby & MySQL
-alias bundleinstall="bundle install --path vendor/bundle"
+alias bundleinstall="bundle config set --local path 'vendor/bundle' ; bundle install"
 alias bundlec="bundle exec "
 alias rollback="bundlec rake db:rollback"
 alias migrate="bundlec rake db:migrate"
